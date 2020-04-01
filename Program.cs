@@ -46,7 +46,7 @@ namespace ConsoleApp2
                     {
                         check = true;
                     }
-                    
+                    // if the check is true then it will tell the user the files are different
                     if(check == true)
                     {
                         Console.WriteLine("Hit any key to find the results");
@@ -57,11 +57,14 @@ namespace ConsoleApp2
                     }
                 }   else
                     {
+                        // Or it will same they are the same and the program will close
                         Console.WriteLine("Files are not different");
                         Console.WriteLine("The program will now close");
                         System.Environment.Exit(0);
                     }
-            }       else_=(chosen_f == "B");
+
+            }
+            else_ = (chosen_f == "B");
                     {
                         IEnumerable<string> diff2 = File3.Except(File4);
                         bool check2 = false;
